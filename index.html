@@ -1,1 +1,100 @@
-It works!
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Morgan Cruz - Official Website</title>
+                <link rel="stylesheet" href="styles/styles.css">
+                <link rel="stylesheet" href="styles/cards.css">
+    </head>
+    <body>
+        <!-- Off-Canvas Navigation -->
+        <nav class="off-canvas-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="releases.html">Releases</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="social.html">Social</a></li>
+<!--                <li><a href="contact.html">Contact</a></li>-->
+            </ul>
+        </nav>
+
+        <button
+            class="menu-icon"
+            aria-label="Toggle Navigation Menu"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+            onclick="toggleNav()"
+            >
+            <span class="hamburger-line top-line"></span>
+            <span class="hamburger-line middle-line"></span>
+            <span class="hamburger-line bottom-line"></span>
+        </button>
+
+        <!-- Overlay -->
+        <div class="overlay" onclick="toggleNav()"></div>
+        <div class="container">
+            <header>
+                <h1 class="artist-name">Morgan Vibes</h1>
+                <p>Pop Artist | Music Creator</p>
+            </header>
+
+            <main>
+
+                <section class="cards">
+                    <div class="wide-card response-block">
+                        <h3>Morgan Vibes (Morgan Cruz) is a Colorado-based singer, lyricist, and producer.</br>She creates music that is both deeply personal and universally relatable.</h3>
+                    </div>
+                </section>
+
+                <section class="releases">
+                    <div class="release-card current-release">
+                        <div class="album-artwork">
+                            <img src="images/artwork/ghost-inside-my-room.jpg"
+                                alt="Current Album Artwork">
+                        </div>
+                        <h2>Current Release</h2>
+                        <p>ghost inside my room - Single</p>
+                        <a href="#" class="cta-button">Listen Now</a>
+                        <a href="#" class="cta-button">Learn the story</a>
+                    </div>
+                    <div class="release-card upcoming-release">
+                        <div class="album-artwork no-image">
+                            <img src="placeholder-upcoming-album.jpg" alt="Upcoming Album Artwork" class="album-image">
+                        </div>
+                        <h2>Upcoming Release</h2>
+                        <p>Life Cycle - EP</p>
+<!--                        <a class="cta-button">Pre-save</a>-->
+                        <a href="#" class="cta-button">Learn the story</a>
+                    </div>
+                </section>
+<!---->
+<!--                <section class="news">-->
+<!--                    <h2>Latest News</h2>-->
+<!--                    <p>Stay tuned for exciting updates!</p>-->
+<!--                    <a href="#" class="cta-button">Join Mailing List</a>-->
+<!--                </section>-->
+            </main>
+
+            <!-- Scripts -->
+            <script src="scripts/nav.js" async></script>
+
+            <footer>
+                <div class="horizontal-scroll">
+                    <a href="https://open.spotify.com/artist/0NsQQcOLh6I3UXf5GMysax"
+                        class="cta-button"
+                        target="_blank">Spotify</a>
+                    <a href="https://music.apple.com/us/artist/morgan-vibes/1845418089"
+                        class="cta-button"
+                        target="_blank">Apple Music</a>
+                    <a href="https://instagram.com/morganvibes"
+                        class="cta-button"
+                        target="_blank">Instagram</a>
+                    <a href="socials.html"
+                        class="cta-button">See All</a>
+                </div>
+                <p>&copy; 2025-2026 Morgan Vibes. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

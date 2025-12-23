@@ -1,0 +1,125 @@
+/* Master styles in styles.css*/
+
+/* .cards Section */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.wide-card {
+    flex: 0 1 85%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    text-align: center;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.social-card {
+    flex: 0 1 300px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    text-align: center;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.social-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.social-link {
+    border-top: 5px solid var(--color-accent-lavender);
+    width: 30%;
+    text-align: center;
+    min-width: 200px;
+}
+
+.platform-link {
+    border-top: 5px solid var(--color-accent-red);
+}
+
+.response-block {
+    border-top: 5px solid var(--color-accent-sky);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .artist-name {
+        font-size: 2em;
+    }
+}
+
+/* Album Artwork Styles */
+.album-artwork {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-speed) ease;
+}
+
+.social-card:hover .logo {
+    transform: scale(1.1);
+}
+
+/* Placeholder Artwork Styles */
+.album-artwork::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+    135deg,
+    var(--color-bg-primary),
+    var(--color-bg-secondary)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-light);
+    font-weight: bold;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* Responsive Artwork Adjustments */
+@media (max-width: 768px) {
+    .album-artwork {
+        max-width: 250px;
+        margin: 0 auto 20px;
+    }
+}
