@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Morgan Cruz - About</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/cards.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <h1 class="artist-name">Morgan Vibes | About</h1>
+                <p>Pop Artist | Music Creator</p>
+            </header>
+
+            <!-- Off-Canvas Navigation -->
+            <nav class="off-canvas-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="releases.html">Releases</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="social.html">Social</a></li>
+<!--                    <li><a href="contact.html">Contact</a></li>-->
+                </ul>
+            </nav>
+
+            <button
+                class="menu-icon"
+                aria-label="Toggle Navigation Menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+                onclick="toggleNav()"
+                >
+                <span class="hamburger-line top-line"></span>
+                <span class="hamburger-line middle-line"></span>
+                <span class="hamburger-line bottom-line"></span>
+            </button>
+
+            <!-- Overlay -->
+            <div class="overlay" onclick="toggleNav()"></div>
+            <div class="container">
+                <main>
+                    <header class="section-header">
+                        <h2>Who is Morgan Vibes?</h2>
+                    </header>
+                    <!-- Morgan Vibes Description -->
+                    <section class="cards">
+                        <div class="wide-card response-block">
+
+                            <h3>Morgan Vibes (Morgan Cruz) is a Colorado-based singer, lyricist, and producer whose music blends R&B warmth, indie intimacy, and the shimmering hooks of modern pop. With a gift for sharp, emotionally resonant lyricism and a refined creative voice, she creates music that is both deeply personal and universally relatable. Her sound spins bright, infectious melodies with soft, introspective verses, capturing the complexity and ongoing transformation of young adulthood. Morgan’s music is unmistakably hers—intentional, unapologetic, and beautifully autobiographical.</h3>
+                        </div>
+                    </section>
+
+                    <header class="section-header">
+                        <h2>October, 2025</h2>
+                    </header>
+<!-- October -->
+                    <section class="cards">
+                        <div class="release-card">
+                            <div class="album-artwork">
+                                <img src="images/artwork/ghost-inside-my-room.jpg"
+                                    alt="Current Album Artwork">
+                            </div>
+                            <h2>ghost inside my room - Single</h2>
+                            <p>ghost inside my room</p>
+                            <a href="#" class="cta-button">Listen Now</a>
+                            <a href="#" class="cta-button">Learn the story</a>
+                        </div>
+
+
+                    </section>
+                </main>
+            </div>
+
+            <!-- Scripts -->
+            <script src="scripts/nav.js" async></script>
+
+            <footer>
+                <p>&copy; 2025-2026 Morgan Vibes. All Rights Reserved.</p>
+            </footer>
+        </div>
+
+    </body>
+</html>

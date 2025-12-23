@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Morgan Cruz - Social Media</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/cards.css">
+    </head>
+    <body>
+
+        <!-- Off-Canvas Navigation -->
+        <nav class="off-canvas-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="releases.html">Releases</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="social.html">Social</a></li>
+<!--                <li><a href="contact.html">Contact</a></li>-->
+            </ul>
+        </nav>
+
+        <button
+            class="menu-icon"
+            aria-label="Toggle Navigation Menu"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+            onclick="toggleNav()"
+            >
+            <span class="hamburger-line top-line"></span>
+            <span class="hamburger-line middle-line"></span>
+            <span class="hamburger-line bottom-line"></span>
+        </button>
+
+        <!-- Overlay -->
+        <div class="overlay" onclick="toggleNav()"></div>
+        <div class="container">
+            <header>
+                <h1 class="artist-name">Morgan Vibes | Socials</h1>
+                <p>Pop Artist | Music Creator</p>
+            </header>
+
+            <main>
+                <header class="section-header">
+                    <h2>DSP</h2>
+                </header>
+                <section class="cards">
+<!--                    Spotify-->
+                    <div class="social-card platform-link">
+                        <div class="logo-icon">
+                            <img id="spotify-logo" alt="Spotify Logo" class="logo">
+                        </div>
+                        <h2>Spotify</h2>
+                        <p>Morgan Vibes</p>
+                        <a href="https://open.spotify.com/artist/0NsQQcOLh6I3UXf5GMysax" class="cta-button">Spotify</a>
+                    </div>
+<!--                    Apple Music-->
+                    <div class="social-card platform-link">
+                        <div class="logo-icon">
+                            <img id="apple-music-logo" alt="Apple Music Logo" class="logo">
+                        </div>
+                        <h2>Apple Music</h2>
+                        <p>Morgan Vibes</p>
+                        <a href="https://music.apple.com/us/artist/morgan-vibes/1845418089" class="cta-button">Apple Music</a>
+                    </div>
+<!--                    Sound Cloud-->
+                    <div class="social-card platform-link">
+                        <div class="logo-icon">
+                            <img id="sound-cloud-logo" alt="Sound Cloud Logo" class="logo">
+                        </div>
+                        <h2>Apple Music</h2>
+                        <p>Morgan Vibes</p>
+                        <a href="https://soundcloud.com/morganvibes" class="cta-button">Sound Cloud</a>
+                    </div>
+
+
+                </section>
+
+<!--                Begin Social Media Links-->
+                <header class="section-header">
+                    <h2>Social Media</h2>
+                </header>
+<!--       INSTAGRAM         -->
+                <section class="cards">
+                    <div class="social-card social-link">
+                        <div class="logo-icon">
+                            <img id="ig-logo" alt="Instagram logo" class="logo">
+                        </div>
+                        <h2>Morgan Vibes</h2>
+                        <p>Instagram @morganvibes</p>
+                        <a href="https://instagram.com/morganvibes" class="cta-button">Instagram</a>
+                    </div>
+<!--        X        -->
+                    <div class="social-card social-link">
+                        <div class="logo-icon">
+                            <img id="x-logo" alt="X logo" class="logo">
+                        </div>
+                        <h2>Morgan Vibes</h2>
+                        <p>X @m0rganvibes</p>
+                        <a href="https://x.com/m0rganvibes" class="cta-button">X</a>
+                    </div>
+
+<!--        TIKTOK        -->
+                    <div class="social-card social-link">
+                        <div class="logo-icon">
+                            <img id="tiktok-logo" alt="TikTok logo" class="logo">
+                        </div>
+                        <h2>Morgan Vibes</h2>
+                        <p>TikTok @m0rganvibes</p>
+                        <a href="https://www.tiktok.com/@m0rganvibes" class="cta-button">TikTok</a>
+                    </div>
+                </section>
+            </main>
+            <script src="scripts/social.js" async></script>
+            <script src="scripts/nav.js" async></script>
+
+            <footer>
+                <p>&copy; 2025-2026 Morgan Vibes. All Rights Reserved.</p>
+            </footer>
+            <div class="attribution">
+                Icons used are trademarks of their respective companies: Apple Music &copy; Apple Inc., Spotify &copy; Spotify AB, Instagram &copy; Meta Platforms, Inc. Solely used for service identification purposes.
+            </div>
+        </div>
+
+    </body>
+</html>
